@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #1a237e;
+  --secondary-color: #283593;
+  --accent-color: #00bcd4;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --bg-color: #f4f6f9;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff !important;
+  letter-spacing: -0.5px;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255,255,255,0.95) !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-1px);
+}
+
+/* Layout & Cards */
+.container {
+  max-width: 1200px;
+}
+
+.row > div, .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Common form containers style override (simplistic approach for this codebase) */
+.col-md-6.col-md-offset-3, 
+form {
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Tables */
+.table {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  border: none;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-primary, .btn-info {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+}
+
+.btn-dark {
+    background: #343a40;
+}
+
+.btn-dark:hover {
+    background: #23272b;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover, .btn-info:hover {
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  box-shadow: 0 4px 15px rgba(26, 35, 126, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    color: white;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+/* Footer */
+footer.page-footer {
+  background: #fff !important;
+  color: var(--text-secondary);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+  margin-top: 4rem;
+}
+
+footer a {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Login Page Specifics */
+body:has(form[action="/login"]) {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.alert {
+    border-radius: 8px;
+    border: none;
+}

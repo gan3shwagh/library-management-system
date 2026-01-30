@@ -1,42 +1,69 @@
-# Java, Spring Boot Mini Project - Library Management System
+# Library Management System
 
+A robust, full-featured Library Management System built with **Java** and **Spring Boot**. This application provides a comprehensive solution for managing books, authors, publishers, and categories with a modern, responsive user interface.
 
-# Local setup
+## 🚀 Features
 
-Step 1: Download or clone the source code from GitHub to the local machine
+- **User Authentication**: Secure admin login system.
+- **Book Management**: Add, update, view, and delete books.
+- **Author Management**: Manage author details.
+- **Publisher & Category Management**: Organize books by publishers and categories.
+- **Responsive Design**: Clean and modern UI using Bootstrap 4 with custom premium styling.
+- **Reporting**: Export data to CSV.
 
-Step 2: Install JDK 17 - https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+## 🛠️ Tech Stack
 
-Step 3: Install IntelliJ IDEA or Eclipse or Apache NetBeans IDE
+- **Backend**: Java 17, Spring Boot 2.6.4
+- **Frontend**: Thymeleaf, Bootstrap 4, Custom CSS
+- **Database**: H2 (Runtime), JPA/Hibernate
+- **Build Tool**: Maven
 
-Step 4: Install Apache Maven - https://maven.apache.org/install.html
+## 📋 Prerequisites
 
-Step 5:  ```mvn clean install```
+Ensure you have the following installed:
+- [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+- [Maven](https://maven.apache.org/install.html)
+- An IDE (IntelliJ IDEA, Eclipse, etc.)
 
-Step 6:  ```mvn spring-boot:run```
+## 📦 Installation & Setup
 
-Step 7: From the browser call the endpoint http://localhost:9080
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/library-management-system.git
+   cd library-management-system
+   ```
 
-Step 8: Admin Login User Id: ```admin@admin.in``` & Password: ```Temp123```
+2. **Build the project**
+   ```bash
+   mvn clean install
+   ```
 
+3. **Run the application**
+   ```bash
+   mvn spring-boot:run
+   ```
 
-# Admin Login Interface
+4. **Access the application**
+   Open your browser and navigate to:
+   [http://localhost:9080](http://localhost:9080)
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiuctxupeOK4Nh8j-nomwwapjkcVvkYig3lX7qoifcXE76_6CnOXMZ-CLww7G180qegsCkrtyUlaqpJsWm9GzhX9QUFxyNyEUAXFD5UWJpvh2BdIr0wyAnFC38QOdsL_1vak8LtxYHrZyplCU_Sri-7kM9nXxI9heXXB0621rzJgL6j1CSweX6xjaorg/s945/admin-login.png">
+## 🔐 Default Credentials
 
-# Add new books, update books, view books, delete books
+| Role | Username | Password |
+|------|----------|----------|
+| **Admin** | `admin@admin.in` | `Temp123` |
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYMpuCQx3lGsS4T_H4ziyDWIkBpYV5qgo5JHFMV0Drper48H7YfygEdv0htE3yWo8mlypUW9W7NFY00UtrVznFfFYIzNGAXBeskhBb_kHAJrVKnI7O5mZt0_c085n6ir-cNVEYsTYffn6WgCmoBiZULR88ah_YxDC-ywRKPTsxj58GcHFnyyeX00RsNA/s800/library-management-system.png">
+## 📸 Screenshots
 
-# Add new authors, update authors, view authors, delete authors
+### Admin Login
+![Admin Login](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiuctxupeOK4Nh8j-nomwwapjkcVvkYig3lX7qoifcXE76_6CnOXMZ-CLww7G180qegsCkrtyUlaqpJsWm9GzhX9QUFxyNyEUAXFD5UWJpvh2BdIr0wyAnFC38QOdsL_1vak8LtxYHrZyplCU_Sri-7kM9nXxI9heXXB0621rzJgL6j1CSweX6xjaorg/s945/admin-login.png)
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixAW5k4E9IXf_OuVO1S5m100KS1xFo2ZrFoLnZYvNLjfpmIdI8W0ukd6yQn6oTsSWBKjDdAIGsnPf0EhgRwKzfpVq3mJXMcqG94Qp2oCCy0Pzf01b3kXP2ahgbvpFQND60c7cHwPNZ7A6uXh7fxqvB5od26PleS3giunEN-uAuFIuKijjELspH1_gLcw/s934/authors-list.png">
+### Dashboard - Book List
+![Dashboard](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYMpuCQx3lGsS4T_H4ziyDWIkBpYV5qgo5JHFMV0Drper48H7YfygEdv0htE3yWo8mlypUW9W7NFY00UtrVznFfFYIzNGAXBeskhBb_kHAJrVKnI7O5mZt0_c085n6ir-cNVEYsTYffn6WgCmoBiZULR88ah_YxDC-ywRKPTsxj58GcHFnyyeX00RsNA/s800/library-management-system.png)
 
-# Add new categories, update categories, view categories, delete categories
+### Authors Management
+![Authors](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixAW5k4E9IXf_OuVO1S5m100KS1xFo2ZrFoLnZYvNLjfpmIdI8W0ukd6yQn6oTsSWBKjDdAIGsnPf0EhgRwKzfpVq3mJXMcqG94Qp2oCCy0Pzf01b3kXP2ahgbvpFQND60c7cHwPNZ7A6uXh7fxqvB5od26PleX3giunEN-uAuFIuKijjELspH1_gLcw/s934/authors-list.png)
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYe6-eBO4HZjqE1Rr0PLoHS1dlvlnwuagwQtX6eRavoDsWRGk4yfguhWIdcOFRgM4H7985xL1bdiLQLqX_iU7RzddDb1yiQ0P3M0sfwUdTRlRGMg85Kp2KKTsVZH5WGlptL6LFRTITq4oSCJFFCZwGML1RrxI-chu-xb4eXOWIoZpNlFWLLUzkW6zLdQ/s935/categorylist.png">
+---
 
-# Add new publishers, update publishers, view publishers, delete publishers
-
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcNQAd4UVi_bYQQSvW49hn0rQ1O7bEBDyN4DDNJSH1rtxBg37QIHQKAp7ELGbFV4Xva2F0DmhTkA3vKVeZcmKs7lODgTulsJr1aLyBckEojzxzZE5FYlfuEwD62Qco6PsjdNVPEWT76GlyVnSP94zNZK59w3CMRuvbYjoc1-MpyXj-WCeNEjPDm6mucw/s938/publishers-list.png">
-
+© 2025 Library Management System. All rights reserved.
